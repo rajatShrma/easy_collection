@@ -1,7 +1,6 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from typing import Annotated
 from sqlmodel import  Session, select
-from fastapi import HTTPException
 from database import get_session
 from schemas.product import  ProductCreateModel, ProductReadModel,UpdateProductModel
 from models.product import Product
